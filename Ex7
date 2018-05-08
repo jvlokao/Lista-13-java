@@ -1,0 +1,23 @@
+package lista13java;
+import java.util.Scanner;
+public class ex7 {
+
+	public static void main(String[] args) {
+		int[] idades = new int[10];
+		int contador;
+		Scanner entrada = new Scanner(System.in);
+		for (contador=0; contador<=9; contador++){
+			System.out.println("Doador numero "+(contador+1)+" Insira sua idade");
+			idades[contador] = entrada.nextInt();
+		}
+		for (contador=0; contador<=9; contador++){
+			if ((idades[contador]>=18) && (idades[contador]<=67)){
+				System.out.println("Doador numero "+(contador+1)+" você tem idade doar sangue");
+			}else{
+				System.out.println("Doador numero "+(contador+1)+" você não tem idade doar sangue");
+			}
+		}
+			
+	}
+
+}
