@@ -1,0 +1,18 @@
+package lista13java;
+import java.util.Scanner;
+public class ex5 {
+
+	public static void main(String[] args) {
+		int numa,numb;
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Insira um numero");
+		numa = entrada.nextInt();
+		System.out.println("Insira outro numero");
+		numb = entrada.nextInt();
+		if (numa==numb){
+			System.out.println("Os dois numeros são iguais");
+		}else{
+			System.out.println("Os dois numeros são diferentes");
+		}
+	}
+}
