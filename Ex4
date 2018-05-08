@@ -1,0 +1,18 @@
+package lista13java;
+import java.util.Scanner;
+public class ex4 {
+
+	public static void main(String[] args) {
+		int numa,numb;
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Insira um numero");
+		numa = entrada.nextInt();
+		System.out.println("Insira outro numero para verificar se o primeiro numero é divisivel pelo segundo");
+		numb = entrada.nextInt();
+		if ((numa%numb) == 0) {
+			System.out.println("o numero "+numa+" é divisivel por "+numb);
+		} else{
+			System.out.println("o numero "+numa+" não é divisivel por "+numb);
+		}
+	}
+}
