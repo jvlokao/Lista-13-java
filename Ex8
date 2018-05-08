@@ -1,0 +1,25 @@
+package lista13java;
+import java.util.Scanner;
+public class ex8 {
+
+	public static void main(String[] args) {
+		int idade;
+		Scanner entrada = new Scanner(System.in);
+		do{
+			System.out.println("Insira sua idade, caso queira parar insira uma idade negativa");
+			idade = entrada.nextInt();
+			if ((idade<16) && (idade>0)){
+				System.out.println("Você não é um eleitor");
+			}else if((idade>=16) && (idade<18)){
+				System.out.println("você é um eleitor facultativo");
+			}else if(idade>65){
+				System.out.println("você é um eleitor facultativo");
+			}else if((idade>=18) && (idade<=65)){
+				System.out.println("Você é um eleitor obrigatório");
+			}else if (idade<0){
+				System.out.println("Obrigado por usar o nosso programa :)");
+			}				
+		}while(idade>0);
+	}
+
+}
